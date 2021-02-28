@@ -1,0 +1,27 @@
+{
+  "name": "array-tap",
+  "version": "1.0.0",
+  "description": "Array extension for debugging chains of map, filter, flat...",
+  "exports": "./lib/initTap.js",
+  "scripts": {
+    "jest": "npx jest",
+    "lint": "npx eslint ./lib/**/*.js --fix",
+    "prettier": "npx prettier ./lib/**/*.js --write",
+    "test": "npm run prettier; npm run lint && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maciej-ka/array-tap.git"
+  },
+  "keywords": [
+    "array",
+    "map",
+    "debug"
+  ],
+  "author": "Maciej Kasprzyk <maciej.kasprzyk.it@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maciej-ka/array-tap/issues"
+  },
+  "homepage": "https://github.com/maciej-ka/array-tap#readme"
+}
