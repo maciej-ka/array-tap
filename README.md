@@ -1,4 +1,4 @@
-# Get value of an array between calls
+# Get value of an array between the calls
 ```javascript
 import { initTap } from 'array-tap';
 initTap();
@@ -13,7 +13,7 @@ initTap();
 By default `initTap()` will extend Array prototype with "tap" method.
 
 It's possible to choose different name, like: `initTap("myTap")`.
-In combination with Javascript Symbol it will prevent name collisions.
+In combination with a Javascript Symbol this will prevent name collisions.
 
 ```javascript
 const tap = Symbol("tap");
