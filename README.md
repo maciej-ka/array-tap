@@ -1,11 +1,6 @@
-Get value of array between steps of map, filter, flat...
-
-```bash
-npm i array-tap
-```
-
+# Get value of an array between calls
 ```javascript
-import initTap from 'array-tap';
+import { initTap } from 'array-tap';
 initTap();
 
 ["alice", "in", "wonderland"]
@@ -14,11 +9,11 @@ initTap();
   .filter(n => n > 5);
 ```
 
-## Name option
+### name option
 By default `initTap()` will extend Array prototype with "tap" method.
 
 It's possible to choose different name, like: `initTap("myTap")`.
-In combination with Javascript Symbol this can prevent name collisions.
+In combination with Javascript Symbol it will prevent name collisions.
 
 ```javascript
 const tap = Symbol("tap");
