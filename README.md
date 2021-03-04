@@ -10,7 +10,7 @@ initTap();
 ```
 
 ### name option
-By default `initTap()` will extend Array prototype with "tap" method.
+By default `initTap()` will extend Array prototype with a "tap" method.
 
 It's possible to choose different name, like: `initTap("myTap")`.
 In combination with a Javascript Symbol this will prevent name collisions.
