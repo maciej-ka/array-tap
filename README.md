@@ -1,7 +1,7 @@
 # Get value of an array between the calls
 ```javascript
-import { initTap } from 'array-tap';
-initTap();
+import { initArrayTap } from 'array-tap';
+initArrayTap();
 
 ["alice", "in", "wonderland"]
   .map(str => str.length)
@@ -10,14 +10,15 @@ initTap();
 ```
 
 ### name option
-By default `initTap()` will extend Array prototype with a "tap" method.
+By default `initArrayTap()` will extend Array prototype with a "tap" method.
 
-It's possible to choose different name, like: `initTap("myTap")`.
+It's possible to choose different name: `initArrayTap("myTap")`.
 In combination with a Javascript Symbol this will prevent name collisions.
 
 ```javascript
+import { initArrayTap } from 'array-tap';
 const tap = Symbol("tap");
-initTap(tap);
+initArrayTap(tap);
 
 ["alice", "in", "wonderland"]
   .map(str => str.length)
