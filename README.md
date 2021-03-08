@@ -5,7 +5,7 @@ initArrayTap();
 
 ["alice", "in", "wonderland"]
   .map(str => str.length)
-  .tap(arr => console.log(arr))
+  .tap(arr => console.log(arr)) // prints: [5, 2, 10]
   .filter(n => n > 5);
 ```
 
