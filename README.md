@@ -1,4 +1,4 @@
-# Get value of an array between the calls
+# Get value of array between chained calls
 ```javascript
 import { initArrayTap } from 'array-tap';
 initArrayTap();
