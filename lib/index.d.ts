@@ -1,4 +1,4 @@
-interface Array {
+interface Array<T> {
   tap(callback: (array: this) => void): this;
 }
 
