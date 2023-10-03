@@ -1,8 +1,9 @@
 {
   "name": "array-tap",
-  "version": "1.2.0",
-  "description": "Array extension for debugging chains of map, filter, flat...",
+  "version": "1.3.0",
+  "description": "Array extension for debugging chains of map and filter",
   "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "jest": "npx jest",
     "lint": "npx eslint ./lib/**/*.js --fix",
