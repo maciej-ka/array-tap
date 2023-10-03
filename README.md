@@ -1,27 +1,17 @@
 # Get value of array between chained calls
-```javascript
-import { initArrayTap } from 'array-tap';
-initArrayTap();
+Tap can be placed in chains between filter and map.
+It expects a callback function that will get a value of array.
 
-["alice", "in", "wonderland"]
+### How to use
+Import array-tap once in your project.
+It will extend Array with a `tap` method.
+
+```javascript
+import 'array-tap';
+
+["Alice", "in", "wonderland"]
   .map(str => str.length)
   .tap(arr => console.log(arr)) // prints: [5, 2, 10]
   .filter(n => n > 5);
 ```
 
-### name option
-By default `initArrayTap()` will extend Array prototype with a "tap" method.
-
-It's possible to choose different name: `initArrayTap("myTap")`.
-In combination with a Javascript Symbol this will prevent name collisions.
-
-```javascript
-import { initArrayTap } from 'array-tap';
-const tap = Symbol("tap");
-initArrayTap(tap);
-
-["alice", "in", "wonderland"]
-  .map(str => str.length)
-  [tap](arr => console.log(arr))
-  .filter(n => n > 3);
-```
